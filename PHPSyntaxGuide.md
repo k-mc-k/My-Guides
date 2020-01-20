@@ -384,7 +384,74 @@ $yearBorn['Billy'] = "1990";`
 <?php
   $yearBorn = array("Kelly"=>"1992", "Kayvan"=>"1995", "Billy"=>"1909");
   echo "Kelly was born in " . $yearBorn['Kelly'];
-  // Outputs "
+  // Outputs "Kelly was born in 1992"
 ?>
 ```
+### Multidimensional Arrays
+A mulidimensional array is an array that contains one or more arrays. It allows you to store values with more than one key.
+```
+<?php
+$cars = array
+  (
+  array("Volvo",22,18),
+  array("BMW",15,13),
+  array("Saab",5,2),
+  array("Land Rover",17,15)
+  );
+  
+echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2].".<br>";
+echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".<br>";
+echo $cars[2][0].": In stock: ".$cars[2][1].", sold: ".$cars[2][2].".<br>";
+echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
+?>
+```
+There are a number of ways you can sort an array:
+* sort() - sort array in ascending order
+* rsort() - sort array in descending order
+* asort() - sort associative arrays in ascending order, according to the value
+* ksort() - sort associative arrays in ascending order, according to the key
+* arsort() - sort associative arrays in descending order, according to the value
+* krsort() - sort associative arrays in descending order, according to the key
+
 ## PHP Loops
+Loops are used to execute the same block of code multiple times providing a certain condition is true. There are different types of loops:
+**while** loop - Loops through a block of code as long as the condition is true
+```
+<?php
+  $x = 5;
+
+  while($x <= 10) {
+    echo "The number is: $x <br>";
+    $x++;
+}
+?>
+```
+**do..while** loop - Loops through a block of code once, then repeats as long as the condition remains true
+```
+<?php
+  $x = 50;
+
+  do {
+    echo "The number is: $x <br>";
+    $x++;
+    } while ($x <= 60);
+?>
+```
+**for** loop - Loops through a block of code a certain number of times. 
+```
+<?php  
+  for ($x = 100; $x <= 120; $x++) {
+  echo "The number is: $x <br>";
+  }
+?> 
+```
+**foreach** loop - This loop can only be used with arrays. It loops through each key/value pair in an array.
+```
+<?php
+  $favFruit = array("Kelly"=>"peach", "Kayvan"=>"apple", "Billy"=>"banana");
+
+  foreach($favFruit as $x => $val) {
+  echo "$x = $val<br>";
+  }
+?>
+```
