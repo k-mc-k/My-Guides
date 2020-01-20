@@ -1,5 +1,4 @@
 # PHP Syntax Guide
-My PHP Syntax Guide
 
 ## PHP Comments
 Comments help make your code more readable and describe what is going on within the PHP. Comments are ignored by the PHP engine.
@@ -121,14 +120,16 @@ strlen() - calculate number of characters (and blank spaces) inside a string
 ```
 <?php
   $first_string = 'How many characters and spaces here';
-  echo strlen($first_string); // Outputs 35
+  echo strlen($first_string); 
+  // Outputs 35
 ?>
 ```
 str_word_count() - counts the number of words in a string
 ```
 <?php
   $second_string = 'Yesterday my car was stuck in the snow';
-  echo str_word_count($second_string); // Outputs 8
+  echo str_word_count($second_string); 
+  // Outputs 8
  ?>
 ```
 str_replace() - replaces selected text within the string
@@ -152,7 +153,7 @@ See [PHP Strings](https://www.tutorialrepublic.com/php-reference/php-string-func
 ## PHP Numbers
 
 ## PHP Constants
-Constants are used when storing data (aka a fixed value) that doesn't change. Unlike PHP variable, constants do not begin with a $ but rather a letter or underscore. They are definited using the `define()` function, that takes 1)the name of the constant and 2)the value as arguments. 
+Constants are used when storing data (aka a fixed value) that doesn't change. Unlike PHP variable, constants do not begin with a $ but rather a letter or underscore. They are definited using the `define()` function, that takes 1) the name of the constant and 2) the value as arguments. 
 
 ```
 <?php
@@ -177,10 +178,10 @@ Arithmetic operators are used with numbers to perform common operations such as 
 Operator	Name	            Example	      Result	
 +	        Addition	        $x + $y	      Sum of $x and $y	
 -	        Subtraction	      $x - $y	      Difference of $x and $y	
-*	        Multiplication	    $x * $y	      Product of $x and $y	
-/	        Division	          $x / $y	      Quotient of $x and $y	
+*	        Multiplication	  $x * $y	      Product of $x and $y	
+/	        Division	        $x / $y	      Quotient of $x and $y	
 %	        Modulus	          $x % $y	      Remainder of $x divided by $y	
-**    	  Exponentiation	    $x ** $y	    Result of raising $x to the $y'th power
+**    	  Exponentiation	  $x ** $y	    Result of raising $x to the $y'th power
 ```
 ```
 <?php
@@ -193,13 +194,13 @@ Operator	Name	            Example	      Result
 ### Assignment Operators
 Assignment operators are used to assign a value to a variable. The basic assignment operators in PHP is '='.
 ```
-Assignment	Same as...	Description
-x = y	x = y	The left operand gets set to the value of the expression on the right	
-x += y	x = x + y	Addition	
-x -= y	x = x - y	Subtraction	
-x *= y	x = x * y	Multiplication	
-x /= y	x = x / y	Division	
-x %= y	x = x % y	Modulus
+Assignment	    Same as...	    Description
+x = y	          x = y	          The left operand gets set to the value of the expression on the right	
+x += y	        x = x + y	      Addition	
+x -= y	        x = x - y	      Subtraction	
+x *= y	        x = x * y	      Multiplication	
+x /= y	        x = x / y	      Division	
+x %= y	        x = x % y	      Modulus
 ```
 ```
 <?php
@@ -212,17 +213,17 @@ x %= y	x = x % y	Modulus
 ### Comparison Operators
 Comparison operators are used to compare two values (number or string) in a Boolean fashion.
 ```
-Operator	Name	Example	Result
-==	Equal	$x == $y	Returns true if $x is equal to $y	
-===	Identical	$x === $y	Returns true if $x is equal to $y, and they are of the same type	
-!=	Not equal	$x != $y	Returns true if $x is not equal to $y	
-<>	Not equal	$x <> $y	Returns true if $x is not equal to $y	
-!==	Not identical	$x !== $y	Returns true if $x is not equal to $y, or they are not of the same type	
->	Greater than	$x > $y	Returns true if $x is greater than $y	
-<	Less than	$x < $y	Returns true if $x is less than $y	
->=	Greater than or equal to	$x >= $y	Returns true if $x is greater than or equal to $y	
-<=	Less than or equal to	$x <= $y	Returns true if $x is less than or equal to $y	
-<=>	Spaceship	$x <=> $y	Returns an integer less than, equal to, or greater than zero, depending on if $x is less than, equal to, or greater than $y. Introduced in PHP 7.	
+Operator	      Name	                Example	          Result
+==	            Equal	                $x == $y	        Returns true if $x is equal to $y	
+===	            Identical	            $x === $y	        Returns true if $x is equal to $y, and they are of the same type	
+!=	            Not equal	            $x != $y	        Returns true if $x is not equal to $y	
+<>	            Not equal	            $x <> $y	        Returns true if $x is not equal to $y	
+!==	            Not identical	        $x !== $y	      Returns true if $x is not equal to $y, or they are not of the same type	
+>	              Greater than	        $x > $y	          Returns true if $x is greater than $y	
+<	              Less than	            $x < $y	          Returns true if $x is less than $y	
+>=	            Greater than or equal to	$x >= $y	    Returns true if $x is greater than or equal to $y	
+<=	            Less than or equal to	$x <= $y	        Returns true if $x is less than or equal to $y	
+<=>	            Spaceship	            $x <=> $y	        Returns an integer less than, equal to, or greater than zero,     depending on if $x is less than, equal to, or greater than $y. Introduced in PHP 7.	
 ```
 ```
 <?php
@@ -235,11 +236,11 @@ Operator	Name	Example	Result
 ### Incrementing and Decrementing Operators
 These operators are used to increment/decrement a variable's value.
 ```
-Operator	Name	Description
-++$x	Pre-increment	Increments $x by one, then returns $x	
-$x++	Post-increment	Returns $x, then increments $x by one	
---$x	Pre-decrement	Decrements $x by one, then returns $x	
-$x--	Post-decrement	Returns $x, then decrements $x by one
+Operator	       Name	              Description
+++$x	           Pre-increment	    Increments $x by one, then returns $x	
+$x++	           Post-increment	    Returns $x, then increments $x by one	
+--$x	           Pre-decrement	    Decrements $x by one, then returns $x	
+$x--	           Post-decrement	    Returns $x, then decrements $x by one
 ```
 ```
 <?php
@@ -251,13 +252,13 @@ $x--	Post-decrement	Returns $x, then decrements $x by one
 ### Logical Operators
 Logical operators are used to combine conditional statements.
 ```
-Operator	Name	Example	Result
-and	And	$x and $y	True if both $x and $y are true	
-or	Or	$x or $y	True if either $x or $y is true	
-xor	Xor	$x xor $y	True if either $x or $y is true, but not both	
-&&	And	$x && $y	True if both $x and $y are true	
-||	Or	$x || $y	True if either $x or $y is true	
-!	Not	!$x	True if $x is not true
+Operator	Name	  Example	      Result
+and	      And	    $x and $y	    True if both $x and $y are true	
+or	      Or	    $x or $y	    True if either $x or $y is true	
+xor	      Xor	    $x xor $y	    True if either $x or $y is true, but not both	
+&&	      And	    $x && $y	    True if both $x and $y are true	
+||	      Or	    $x || $y	    True if either $x or $y is true	
+!	        Not	    !$x	          True if $x is not true
 ```
 ```
 <?php
@@ -272,9 +273,9 @@ xor	Xor	$x xor $y	True if either $x or $y is true, but not both
 ### String Operators
 Two operations that are designed for strings
 ```
-Operator	Name	Example	Result
-.	Concatenation	$txt1 . $txt2	Concatenation of $txt1 and $txt2	
-.=	Concatenation assignment	$txt1 .= $txt2	Appends $txt2 to $txt1
+Operator	Name	                      Example	            Result
+.	        Concatenation	              $txt1 . $txt2	      Concatenation of $txt1 and $txt2	
+.=	      Concatenation assignment	  $txt1 .= $txt2	    Appends $txt2 to $txt1
 ```
 ```
 <?php
@@ -287,13 +288,13 @@ Operator	Name	Example	Result
 ### Array Operators
 The array operators are used to compare arrays 
 ```
-Operator	Name	Example	Result
-+	Union	$x + $y	Union of $x and $y	
-==	Equality	$x == $y	Returns true if $x and $y have the same key/value pairs	
-===	Identity	$x === $y	Returns true if $x and $y have the same key/value pairs in the same order and of the same types	
-!=	Inequality	$x != $y	Returns true if $x is not equal to $y	
-<>	Inequality	$x <> $y	Returns true if $x is not equal to $y	
-!==	Non-identity	$x !== $y	Returns true if $x is not identical to $y
+Operator	 Name	          Example	      Result
++	         Union	        $x + $y	      Union of $x and $y	
+==	       Equality	      $x == $y	    Returns true if $x and $y have the same key/value pairs	
+===	       Identity	      $x === $y	    Returns true if $x and $y have the same key/value pairs in the same order and of the same types	
+!=	       Inequality	    $x != $y	    Returns true if $x is not equal to $y	
+<>	       Inequality	    $x <> $y	    Returns true if $x is not equal to $y	
+!==	       Non-identity	  $x !== $y	    Returns true if $x is not identical to $y
 ```
 ```
 <?php
