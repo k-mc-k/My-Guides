@@ -142,13 +142,13 @@ Operators in PHP are symbols that perform certain actions with variables and act
 ### Arithmetic Operators
 Arithmetic operators are used with numbers to perform common operations such as division, addition, subtraction, etc
 ```
-Operator	Name	          Example	    Result	
-+	        Addition	      $x + $y	    Sum of $x and $y	
--	        Subtraction	    $x - $y	    Difference of $x and $y	
-*	        Multiplication	$x * $y	    Product of $x and $y	
-/	        Division	      $x / $y	    Quotient of $x and $y	
-%	        Modulus	        $x % $y	    Remainder of $x divided by $y	
-**    	    Exponentiation	$x ** $y	  Result of raising $x to the $y'th power
+Operator	Name	            Example	      Result	
++	        Addition	        $x + $y	      Sum of $x and $y	
+-	        Subtraction	      $x - $y	      Difference of $x and $y	
+*	        Multiplication	    $x * $y	      Product of $x and $y	
+/	        Division	          $x / $y	      Quotient of $x and $y	
+%	        Modulus	          $x % $y	      Remainder of $x divided by $y	
+**    	  Exponentiation	    $x ** $y	    Result of raising $x to the $y'th power
 ```
 ## PHP If & Else & ElseIf
 
