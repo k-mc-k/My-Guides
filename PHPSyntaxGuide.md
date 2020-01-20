@@ -40,14 +40,14 @@ Echo & Print are both used to display output to the browser. Print can only outp
 ## PHP Data Types
 There are eight data types supported in PHP: Integer, Float, String, Booleans, Array, Object, Resource and NULL.
 ### PHP Integer 
-The integer data type is a non-decimal number that must have at least one digit that can be either positive or negative. They can be specified in decimal (base 10), hexadecimal (base 16), octal (base 8), or binary (base 2) notation.
+The integer data type is a non-decimal number that must have at least one digit that can be either positive or negative. They can be specified in decimal (base 10), hexadecimal (base 16), octal (base 8), or binary (base 2) notation. **See more detail under the PHP Numbers heading
 
 ```
 $integer = 1234;
 ```
 
 ### PHP Float
-Also known as floating point numbers, doubles or real numbers, the float data type is a exponential or decimal number.
+Also known as floating point numbers, doubles or real numbers, the float data type is a exponential or decimal number. **See more detail under the PHP Numbers heading
 ```
 $float = 12.345;
 ```
@@ -151,7 +151,53 @@ strrev() - reverse a string
 See [PHP Strings](https://www.tutorialrepublic.com/php-reference/php-string-functions.php "PHP Strings") for a complete list of string functions. 
 
 ## PHP Numbers
-
+PHP provides automatic data type conversions, meaning if you assign an integer value to a variable, the datantype of that variable will be an integer. On the next line, this variable could change to a string if you assign a string to the same variable. There are different types of Numbers in PHP: Integers, Floats, Infinity, NaN.
+### PHP Integer
+An integer is a negative or positive number without a decimal point that ranges between -2147483648 and 2147483647. Any value lower or greater is considered a float. An integer must have at least one digit and it's important to note that even if the result is a whole number, if there is any decimal number being used, the result will be stored as a float (ie. 2 * 1.5 = 3). PHP has the below functions to check if a variable's data type is an integer:
+* is_int()
+* is_integer()
+* is_long()
+```
+<?php
+  $int = 40;
+  var_dump(is_int($int));
+  // Outputs true as it's a non-decimal number
+?>
+```
+### PHP Floats
+Opposite of integer, float is a number with a decimal point or exponent. The typical max value is 1.7976921248623E+308 depending on the platform, and has a maximum precision on 14 digits. PHP has the below functions to check if a variable's data type is a float:
+* is_float()
+* is_double()
+```
+<?php
+  $flt = 12.345;
+  var_dump(is_float($flt));
+  // Outputs true has $flt is a decimal number
+?>
+```
+### PHP Infinity
+A value that exceeds the float max is considered infinite. PHP has the below functions to check if a variable's data type is finite or infinite:
+* is_finite()
+* is_infinite()
+Note that PHP's var_dump() function returns the value and data type as well.
+```
+<?php
+  $inf = 1.9e411;
+  var_dump($inf);
+  // Outputs float(INF)
+?>
+```
+### PHP NaN
+NaN stands for 'Not a Number' and is used for impossible operations. Like infinity, NaN can use the PHP function var_dump() to return the value and data type, the below function can also be used:
+* is_nan()
+```
+<?php
+  $numb = test(7);
+  var_dump($numb);
+  // Outputs float(NAN)
+  // if $numb = 7, Outputs int(8)
+?>
+```
 ## PHP Constants
 Constants are used when storing data (aka a fixed value) that doesn't change. Unlike PHP variable, constants do not begin with a $ but rather a letter or underscore. They are definited using the `define()` function, that takes 1) the name of the constant and 2) the value as arguments. 
 
