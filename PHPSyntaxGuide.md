@@ -39,6 +39,49 @@ Echo & Print are both used to display output to the browser. Print can only outp
 ```
 
 ## PHP Data Types
+There are eight data types supported in PHP: Integer, Float, String, Booleans, Array, Object, Resource and NULL.
+### PHP Integer 
+The integer data type is a non-decimal number that must have at least one digit that can be either positive or negative. They can be specified in decimal (base 10), hexadecimal (base 16), octal (base 8), or binary (base 2) notation.
+
+```
+$integer = 1234;
+```
+
+### PHP Float
+Also known as floating point numbers, doubles or real numbers, the float data type is a exponential or decimal number.
+```
+$float = 12.345;
+```
+
+### PHP String
+A string is a sequence of characters (letters, numbers or special characters) inside double or single quotes. Every character equals a byte.
+```
+$string = "This is my string example.";
+```
+
+### PHP Booleans
+Booleans represent two values, either 0(false) or 1(true). Booleans are often used for conditional testing. 
+```
+$boolean1 = true;
+$boolean2 = false;
+```
+
+### PHP Arrays
+An array holds multiple values within one variable. 
+```
+$shapes = array("circle", "square", "triangle");
+```
+
+### PHP Object
+
+### PHP Resource
+
+### PHP NULL
+Null is a data type that can only have one value - NULL. This represents an empty variable. If a variable's data type is NULL, this means there has been no value assigned. 
+``` 
+$var1 = NULL; // has NULL value
+$var2 = ""; // has no value assigned
+```
 
 ## PHP Strings
 
