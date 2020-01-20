@@ -73,8 +73,40 @@ $shapes = array("circle", "square", "triangle");
 ```
 
 ### PHP Object
+A class is a template for objects, and an object is an instance of class. Multiple objects can be created from a class and each object has the properties and methods defined in the class, however different property values.
+```
+<?php
+class junkFood {
+  public $name;
+  public $type;
 
+  function set_name($name) {
+    $this->name = $name;
+  }
+  function get_name() {
+    return $this->name;
+  }
+  function set_type($type) {
+    $this->type = $type;
+  }
+  function get_type() {
+    return $this->type;
+  }
+}
+
+$KitKat = new junkFood();
+$KitKat->set_name('KitKat');
+$KitKat->set_type('cholocate bar');
+echo "Name: " . $KitKat->get_name();
+echo "<br>";
+echo "Type: " .  $KitKat->get_type();
+?>
+```
 ### PHP Resource
+A resource is a special variable, not an actual data type, that holds special handlers to an external source such as open files, database connections, image areas, etc. In the below example, we are creating a file resource object reference: 
+```
+$fp = fopen("index.php",'r');
+```
 
 ### PHP NULL
 Null is a data type that can only have one value - NULL. This represents an empty variable. If a variable's data type is NULL, this means there has been no value assigned. 
