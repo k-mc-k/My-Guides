@@ -408,8 +408,8 @@ The index can be assigned manually or automatically. Please note the index alway
 ?>
 ```
 ### Associative Arrays
-These are arrays that use named keys that you assign to them. Please note there are two ways to create an associative array:
-`$yearBorn = array("Kelly"=>"1992", "Kayvan"=>"1995", "Billy"=>"1909");`
+These are arrays that use named keys that you assign to them. Please note there are two ways to create an associative array:<br/>
+`$yearBorn = array("Kelly"=>"1992", "Kayvan"=>"1995", "Billy"=>"1909");` OR <br/>
 `$yearBorn['Kelly'] = "1992";
 $yearBorn['Kayvan'] = "1995";
 $yearBorn['Billy'] = "1990";`
