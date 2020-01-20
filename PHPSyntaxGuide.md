@@ -32,6 +32,13 @@ $var = "My variable";
 ## PHP Numbers
 
 ## PHP Constants
+Constants are used when storing data (aka a fixed value) that doesn't change. Unlike PHP variable, constants do not begin with a $ but rather a letter or underscore. They are definited using the `define()` function, that takes 1)the name of the constant and 2)the value as arguments. 
+
+```
+<?php
+  define("GREETING", "Thank you for visting our website! We look forward to serving you.");
+?>
+```
 
 ## PHP Operators
 
