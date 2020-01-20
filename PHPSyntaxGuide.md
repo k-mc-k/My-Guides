@@ -290,7 +290,47 @@ $x > $y	($x <=> $y) === 1
 ?>
 ```
 ## PHP If & Else & ElseIf
-Conditional statments take different conditions to perform different actions.
+Conditional statments that take in different conditions to perform different actions.
+**if** statement - Executes a block of code if the condition is true 
+```
+<?php
+  $a = 5;
+  $b = 5;
+
+  if ($a == $b) {
+  echo "The numbers are equal";
+  }
+?>
+```
+**if..else** statement - Executes one block of code if the condition is true and a different block of code if the condition is false
+```
+<?php
+  $mycash = 10;
+  $yourcash = 100;
+
+  if ($mycash > $yourcash) {
+  echo "Looks like I have more money than you";
+    } elseif ($mycash < $yourcash) {
+    echo "Can you please lend me some cash?"
+    }
+?>
+```
+**if..elseif..else** statement - Executes multiple if..else statements 
+```
+<?php
+  $opt1 = 10;
+  $opt2 = 2;
+
+  if ($val1 > $val2) {
+  echo "Option 1 is bigger than option 2";
+    } elseif ($val1 == $val2) {
+    echo "Option 1 is equal to option 2";
+      } else {
+      echo "Option 1 is smaller than option 2";
+      }
+  // Outputs 'Option 1 is bigger than option 2'
+?>
+```
 ## PHP Functions
 
 ## PHP Arrays
