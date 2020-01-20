@@ -84,6 +84,38 @@ $var2 = ""; // has no value assigned
 ```
 
 ## PHP Strings
+Strings are a sequence and/or combination of numbers, letters, special characters and arithmetic values. Double quotations marks can be used, however it's best practice to use single quotation marks as they are treated almost literally. There are many built-in string functions within PHP, here are a few:
+strlen() - calculate number of characters (and blank spaces) inside a string
+```
+<?php
+  $first_string = 'How many characters and spaces here';
+  echo strlen($first_string); // Outputs 35
+?>
+```
+str_word_count() - counts the number of words in a string
+```
+<?php
+  $second_string = 'Yesterday my car was stuck in the snow';
+  echo str_word_count($second_string); // Outputs 8
+ ?>
+```
+str_replace() - replaces selected text within the string
+```
+<?php
+  $third_string = 'First I was wrong, then I was right.'
+  echp str_replace("wrong", "right", $third_string);
+  // Outputs 'First I was right, then I was wrong.'
+ ?>
+```
+strrev() - reverse a string
+```
+<?php
+  $fourth_string = 'Hello, is it me you're looking for?'
+  echo strrev($fourth_string);
+  // Outputs '?rof gnikool er'uoy em ti si ,oellH'
+ ?>
+ ```
+See [PHP Strings](https://www.tutorialrepublic.com/php-reference/php-string-functions.php "PHP Strings") for a complete list of string functions. 
 
 ## PHP Numbers
 
