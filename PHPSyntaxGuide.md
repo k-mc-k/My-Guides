@@ -470,18 +470,18 @@ $yearBorn['Billy'] = "1990";`
 A mulidimensional array is an array that contains one or more arrays. It allows you to store values with more than one key.
 ```
 <?php
-$cars = array
+$tech = array
   (
-  array("Volvo",22,18),
-  array("BMW",15,13),
-  array("Saab",5,2),
-  array("Land Rover",17,15)
+  array("Mac",34,28),
+  array("Netbook",25,10),
+  array("Acer",8,1),
+  array("Microsoft",37,12)
   );
   
-echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2].".<br>";
-echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".<br>";
-echo $cars[2][0].": In stock: ".$cars[2][1].", sold: ".$cars[2][2].".<br>";
-echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
+echo $tech[0][0].": In stock: ".$tech[0][1].", sold: ".$tech[0][2].".<br>";
+echo $tech[1][0].": In stock: ".$tech[1][1].", sold: ".$tech[1][2].".<br>";
+echo $tech[2][0].": In stock: ".$tech[2][1].", sold: ".$tech[2][2].".<br>";
+echo $tech[3][0].": In stock: ".$tech[3][1].", sold: ".$tech[3][2].".<br>";
 ?>
 ```
 There are a number of ways you can sort an array:
@@ -502,7 +502,7 @@ Loops are used to execute the same block of code multiple times providing a cert
   while($x <= 10) {
     echo "The number is: $x <br>";
     $x++;
-}
+  }
 ?>
 ```
 **do..while** loop - Loops through a block of code once, then repeats as long as the condition remains true
