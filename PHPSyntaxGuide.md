@@ -300,6 +300,7 @@ Conditional statments that take in different conditions to perform different act
   if ($a == $b) {
   echo "The numbers are equal";
   }
+  // Outputs "The numbers are equal"
 ?>
 ```
 **if..else** statement - Executes one block of code if the condition is true and a different block of code if the condition is false
@@ -313,6 +314,7 @@ Conditional statments that take in different conditions to perform different act
     } elseif ($mycash < $yourcash) {
     echo "Can you please lend me some cash?"
     }
+    // Outputs "Can you please lend me some cash?"
 ?>
 ```
 **if..elseif..else** statement - Executes multiple if..else statements 
@@ -332,7 +334,57 @@ Conditional statments that take in different conditions to perform different act
 ?>
 ```
 ## PHP Functions
+The real power of PHP comes from it's functions. Not only do functions reduce the repetition of code within a program, it makes it easier to elimiate errors and makes the code easier to read. There are more than 1,000 built-in PHP functions aside from the functions you can create yourself! 
+```
+function functionName() {
+    code to be executed;
+}
+```
+A few important things to note:
+* A function name must start with a letter or underscore
+* Functions are not case-sensitive
+* A function will not execute automatically when the page loads and it needs to be 'called'
+* Information can be passed to functions through arguments, which are like variables. The argument is mentioned inside parentheses after the function name `function user($fname, $lname){ ..`
+* PHP automatically associates a data type to the varialble, this can be overridden using the `strict` declaration
+* Use the `return` statment to let a function return a value
+```
+<?php  
+  function sayHi($name,$age){  
+  echo "Hello $name, you are $age years old<br/>";  
+  }  
+
+  sayHi("Kelly",27);  
+  sayHi("Kayvan",24);  
+  sayHi("Billy",99);  
+  
+   // Outputs "Hello Kelly, you are 27 years old  
+               Hello Kayvan, you are 24 years old
+               Hello Billy, you are 99 years old"
+?> 
+```
 
 ## PHP Arrays
-
+An array can hold many different values values under a single variable. You can access any of the values by referring to an index number. In PHP, there are three different types of arrays: Indexed, Associative and Multidimensional.
+### Indexed Arrays
+The index can be assigned manually or automatically. Please note the index always starts at 0
+```
+<?php
+  $fruits = array("apples", "grapes", "peaches"); 
+  echo "I like " . $fruits[0] . ", " . $fruits[1] . " and " . $fruits[2] . ".";
+  // Outputs "I like apples, grapes and peaches"
+?>
+```
+### Associative Arrays
+These are arrays that use named keys that you assign to them. Please note there are two ways to create an associative array:
+`$yearBorn = array("Kelly"=>"1992", "Kayvan"=>"1995", "Billy"=>"1909");`
+`$yearBorn['Kelly'] = "1992";
+$yearBorn['Kayvan'] = "1995";
+$yearBorn['Billy'] = "1990";`
+```
+<?php
+  $yearBorn = array("Kelly"=>"1992", "Kayvan"=>"1995", "Billy"=>"1909");
+  echo "Kelly was born in " . $yearBorn['Kelly'];
+  // Outputs "
+?>
+```
 ## PHP Loops
