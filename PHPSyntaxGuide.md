@@ -108,7 +108,7 @@ $fp = fopen("index.php",'r');
 ```
 
 ### PHP NULL
-Null is a data type that can only have one value - NULL. This represents an empty variable. If a variable's data type is NULL, this means there has been no value assigned. 
+Null is a data type that can only have one value - NULL. This represents an empty variable. 
 ``` 
 $var1 = NULL; // has NULL value
 $var2 = ""; // has no value assigned
