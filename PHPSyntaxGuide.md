@@ -369,7 +369,7 @@ $x > $y	($x <=> $y) === 1
 ?>
 ```
 ## PHP If & Else & ElseIf
-Conditional statments that take in different conditions to perform different actions.<br/>
+These are onditional statments that take in different conditions to perform different actions.<br/>
 **if** statement - Executes a block of code if the condition is true 
 ```
 <?php
