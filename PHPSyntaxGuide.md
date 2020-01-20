@@ -24,6 +24,19 @@ $var = "My variable";
 * Variable names must begin with a letter or underscore, not a number
 
 ## PHP Echo/ Print
+Echo & Print are both used to display output to the browser. Print can only output one string and always returns 1, whereas echo can print multiple strings and does not return any value which makes it faster. HTML code can also be used in both echo and print statements to format what is printed to the screen.
+
+```
+<?php
+  print "This text will print to the screen!";
+?>
+```
+```
+<?php
+  $color = 'purple';
+  echo "My favorite color is " . $color;
+?>
+```
 
 ## PHP Data Types
 
