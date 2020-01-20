@@ -11,7 +11,7 @@ Comments help make your code more readable and describe what is going on within 
 ```
 
 ## PHP Variables
-Variables begin with '$' and are used to store data
+Variables begin with $ and are used to store data
 
 ```
 $var = "My variable";
