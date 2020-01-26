@@ -3,8 +3,8 @@
 
 **A few things to note:** 
 - a semicolon is used at the end of every statment to terminate the command ( ; )
-- the asterisk symbol ( * ) represents selecting all columns in a table
-- single line (--) and double line (/* */) comments can be used to describe or provide clarity about the SQL statemnt
+- the asterisk symbol ( * ) is used to select all columns in a table
+- single line (--) and double line (/* */) comments can be used to describe or provide clarity about the SQL statement
 - exit mysql in your terminal by typing ***exit;***
 
 ### Login into MySQL
@@ -24,10 +24,10 @@ CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 ```
 
 ### Grant Privileges
+In order to save and implement changes made, execute **FLUSH PRIVILEGES;** at the end
 ```
 GRANT ALL PRIVILEGES ON * . * TO 'someuser'@'localhost';
 ```
-In order to save and implement changes made, execute the following command at the end: **FLUSH PRIVILEGES;**
 
 ### Show Granted Privileges
 ```
@@ -59,8 +59,8 @@ CREATE newdatabasename;
 USE databasename; 
 ```
 
-### Create a table with columns and data types
-For a full list of [datatypes](https://www.w3resource.com/mysql/mysql-data-types.php)
+### Create a Table 
+Visit [this link](https://www.w3resource.com/mysql/mysql-data-types.php) for a full list of different datatypes
 ```
 CREATE TABLE newtable (
     columnone datatype,
@@ -93,12 +93,12 @@ VALUES ('Kelly', 'McLaren', 'kellytest@test.com', '123-456-7890',27),
 ('Billy', 'Bob', 'bob@test.com', '999-999-9999',64);
 ```
 
-### Select using Where
+### Select using WHERE
 ```
 SELECT * FROM tablename WHERE gender='female';
 ```
 
-### Select using Where (using a range)
+### Select using WHERE (using a range)
 ```
 SELECT name FROM city WHERE population BETWEEN 670000 AND 700000;
 ```
@@ -175,7 +175,7 @@ CREATE TABLE users (
 );
 ```
 
-### Use Inner Join
+### Use INNER JOIN
 The INNER JOIN keyword selects all rows from both tables provided there is a match between the columns
 ```
 SELECT column_name(s)
