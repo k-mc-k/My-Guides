@@ -108,7 +108,7 @@ SELECT name FROM city WHERE population BETWEEN 670000 AND 700000;
 DELETE FROM users WHERE id = 10;
 ```
 
-### Update a row
+### Update a Row
 ```
 UPDATE users SET phonenumber = '123-456-7890' WHERE id = 10;
 ```
