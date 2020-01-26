@@ -2,8 +2,8 @@
 
 
 **A few things to note:** 
-- a semicolon is used at the end of every statment to terminate the command (;)
-- the asterisk symbol (*) represents selecting all columns in a table
+- a semicolon is used at the end of every statment to terminate the command ( ; )
+- the asterisk symbol ( * ) represents selecting all columns in a table
 - single line (--) and double line (/* */) comments can be used to describe or provide clarity about the SQL statemnt
 - exit mysql in your terminal by typing ***exit;***
 
