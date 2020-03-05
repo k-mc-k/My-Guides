@@ -41,8 +41,10 @@ The Object Oriented concepts in PHP are:
 
 **Destructor** − refers to a special type of function which will be called automatically whenever an object is deleted or goes out of scope.
 
+## OOP vs Procedural
+Below is an example of OOP vs Procedural that perform the same functions
 
-### OOP Exmaple
+#### OOP code
 ```
 <?php
 
@@ -69,7 +71,7 @@ $value = $example->get('foo');
 
 ```
 
-### Procedural Exmaple
+#### Procedural code
 ```
 <?php
 
